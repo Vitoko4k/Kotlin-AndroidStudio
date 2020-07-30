@@ -9,8 +9,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         variableYConstantes()
+        tiposDeDatos()
     }
 
+    //crear una funcion
     private fun variableYConstantes () {
         //variables
         var myFirstVariable = "Hola Victor"
@@ -50,5 +52,13 @@ class MainActivity : AppCompatActivity() {
         //creamos una constante para darle el utlimo valor de una variable para no ser modificada nunca mas
         val mySecondConstante = myFirstVariable
         println(mySecondConstante)
+    }
+
+    private fun tiposDeDatos () {
+        //4 tipos de datos principales
+        //textos, enteros, decimales y buleanos
+
+        //String
+        val myString = "variable de tipo string"
     }
 }
