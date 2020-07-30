@@ -12,7 +12,8 @@ class MainActivity : AppCompatActivity() {
         //variableYConstantes()
         //tiposDeDatos()
         //sentenciaIf ()
-        sentenciaWhen ()
+        //sentenciaWhen ()
+        arrays ()
     }
 
     //crear una funcion
@@ -160,5 +161,55 @@ class MainActivity : AppCompatActivity() {
                 println("en serio ya estas viejo")
             }
         }
+    }
+
+    private fun arrays () {
+        val nombre = "victor"
+        val apellido = "sandoval"
+        val compañia = "vicsan"
+        val edad = "21"
+
+        //creacion del array
+        val myArray = arrayListOf<String>()
+
+        //añadir datos al array
+        myArray.add(nombre)
+        myArray.add(apellido)
+        myArray.add(compañia)
+        myArray.add(edad)
+        println(myArray)
+
+        //añador un conjunto de datos
+        myArray.addAll(listOf("hola", "esta es mi array"))
+        println(myArray)
+
+        //acceder a dato
+        val myCompany = myArray[2]
+        println(myCompany)
+
+        //modificacion de dato
+        myArray[5] = "cambiamos el dato"
+        println(myArray[5])
+
+        //eliminar datos
+        myArray.removeAt(4)
+        println(myArray)
+
+        //recorrer datos
+        //it valor que toma cada vez que esta accediendo a un dato
+        myArray.forEach {
+            println(it)
+        }
+
+        //otras operaciones
+        //cuantos elementos tenemos
+        myArray.count()
+        //eliminar todos los elementos
+        myArray.clear()
+        //ver el primero y el ultimo elemento
+        myArray.first()
+        myArray.last()
+        //operaciones de ordenacion
+        myArray.sort()
     }
 }
