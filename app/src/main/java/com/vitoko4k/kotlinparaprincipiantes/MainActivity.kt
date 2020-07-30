@@ -14,7 +14,8 @@ class MainActivity : AppCompatActivity() {
         //sentenciaIf ()
         //sentenciaWhen ()
         //arrays ()
-        maps ()
+        //maps ()
+        loop ()
     }
 
     //crear una funcion
@@ -240,5 +241,57 @@ class MainActivity : AppCompatActivity() {
         //eliminar datos
         myMaps.remove("josefa")
         println(myMaps)
+    }
+
+    private fun loop () {
+        //bucles
+        val myArray = listOf("hola", "como estas", "espero que bien")
+        val myMap = mutableMapOf("brasil" to 1, "colombia" to 2, "españa" to 4)
+
+        //for siempre incrementa de 1 en 1
+        for (myString in myArray) {
+            println(myString)
+        }
+
+        for (myElement in myMap) {
+            println("${myElement.key}-${myElement.value}")
+        }
+
+        for (x in 0..10) {
+            println(x)
+        }
+
+        for (x in 9 until 30) {
+            println(x)
+        }
+
+        //incrementar en mas valor
+        for (x in 0..10 step 2) {
+            println(x)
+        }
+
+        //cuenta regresiva
+        fot (x in 10 downTo 0 step 3){
+            println(x)
+        }
+
+        //array entre rango numerico
+        val myNumericArray = (0..20)
+        for (myNum in myNumericArray){
+            println(myNum)
+        }
+
+        //while mientras la condicion sea verdadero hacer esto (debes incrementar cada vez)
+        var x = 0
+
+        while (x<10) {
+            println(x)
+            x++
+        }
+
+        while (x<10) {
+            println(x)
+            x+=2
+        }
     }
 }
