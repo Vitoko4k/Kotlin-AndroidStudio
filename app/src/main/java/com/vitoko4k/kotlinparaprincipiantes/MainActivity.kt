@@ -11,7 +11,8 @@ class MainActivity : AppCompatActivity() {
         //llamada a la funcion para ser ejecutable
         //variableYConstantes()
         //tiposDeDatos()
-        sentenciaIf ()
+        //sentenciaIf ()
+        sentenciaWhen ()
     }
 
     //crear una funcion
@@ -116,5 +117,48 @@ class MainActivity : AppCompatActivity() {
         * && operador "y" ambas deben ser verdaderas
         * || operador "o" al menos una debe ser verdadera
         * ! operador "no" negar todo lo anterior*/
+    }
+
+    private fun sentenciaWhen () {
+        val country = "chile"
+        //cuando country consida con el valor ejecuta esto
+        //when con string
+        when (country) {
+            "españa", "chile", "argentina" -> {
+                println("el idioma es español")
+            }
+            "eeuu" -> {
+                println("el idioma es ingles")
+            }
+            "francia" -> {
+                println("el idioma es frances")
+            }
+            else -> {
+                println("no conocemos el idioma")
+            }
+        }
+
+        //when con int puedes trabajar on rangos
+        val age = 10
+        when (age) {
+            0, 1, 2 -> {
+                println("eres un bebe")
+            }
+            in 3..10 -> {
+                println("eres un niño")
+            }
+            in 10..17 -> {
+                println("eres un adolecente")
+            }
+            in 18..69 -> {
+                println("eres un adulto")
+            }
+            in 70..99 -> {
+                println("eres un anciano")
+            }
+            else -> {
+                println("en serio ya estas viejo")
+            }
+        }
     }
 }
