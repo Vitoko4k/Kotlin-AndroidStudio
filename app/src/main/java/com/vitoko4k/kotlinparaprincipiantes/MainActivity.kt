@@ -13,7 +13,8 @@ class MainActivity : AppCompatActivity() {
         //tiposDeDatos()
         //sentenciaIf ()
         //sentenciaWhen ()
-        arrays ()
+        //arrays ()
+        maps ()
     }
 
     //crear una funcion
@@ -211,5 +212,33 @@ class MainActivity : AppCompatActivity() {
         myArray.last()
         //operaciones de ordenacion
         myArray.sort()
+    }
+
+    private fun maps () {
+        //<clave, valor dato>
+        //mapof = refresca los datos del mapa para dar nuevos valores
+        var myMaps: Map<String,int> = mapOf()
+        println(myMaps)
+
+        //debe ser un mapa mutable para sergui agregando datos
+        myMaps = mutableMapOf("victor" to 1, "sandoval" to 2, "informatico" to 5)
+        println(myMaps)
+
+        //añadir valor individualmemte
+        myMaps["josefa"] = 7
+        myMaps.put("roman",8)
+        println(myMaps)
+
+        //actualizar valor
+        myMaps.put("victor",10)
+        myMaps["victor"] = 20
+        println(myMaps)
+
+        //acceder a datos
+        println(myMaps["victor"])
+
+        //eliminar datos
+        myMaps.remove("josefa")
+        println(myMaps)
     }
 }
