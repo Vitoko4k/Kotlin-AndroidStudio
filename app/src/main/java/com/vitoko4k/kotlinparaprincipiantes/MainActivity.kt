@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        variableYConstantes()
+        //variableYConstantes()
         tiposDeDatos()
     }
 
@@ -60,5 +60,34 @@ class MainActivity : AppCompatActivity() {
 
         //String
         val myString = "variable de tipo string"
+        val myString2 = "variebla de tipo string 2"
+        //concadenacion de string
+        val myString3 = myString + " " + myString2
+        println(myString3)
+
+        //enteros (byte, short, int, long)
+        val myInt = 1
+        val myInt2 = 2
+        //operaciones matematicas con numeros enteros
+        val myInt3 = myInt + myInt2
+        println(myInt3)
+
+        //decimales (float, double)
+        //terminacion en f para que sepa que es float
+        val myFloat = 1.5f
+        val myDouble = 1.5
+        val myDouble2 = 2.6
+        //asemeja el 1 como 1.0
+        val myDouble3 = 1
+        val myDouble4 = myDouble + myDouble2
+        println(myDouble4)
+
+        //boolean (bool)
+        val myBool = true
+        val myBool2 = false
+        //== igual, && and
+        println(myBool == myBool2)
+        println(myBool && myBool2)
+
     }
 }
