@@ -8,8 +8,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //llamada a la funcion para ser ejecutable
         //variableYConstantes()
-        tiposDeDatos()
+        //tiposDeDatos()
+        sentenciaIf ()
     }
 
     //crear una funcion
@@ -89,5 +91,30 @@ class MainActivity : AppCompatActivity() {
         println(myBool == myBool2)
         println(myBool && myBool2)
 
+    }
+
+    private fun sentenciaIf () {
+        val myNumber = 10
+        /*operadores condicionales
+        * > mayor que
+        * < menor que
+        * >= mayor o igual que
+        * <= menor o igual que
+        * == igualdad
+        * != desigualdad*/
+
+        if (myNumber<10) {
+            //concadenacion de inr con string
+            println("$myNumber es menor que 10")
+        } else if (myNumber>10) {
+            println("$myNumber es mayor que 10")
+        } else {
+            println("$myNumber es igual a 10")
+        }
+
+        /*operadores logicos
+        * && operador "y" ambas deben ser verdaderas
+        * || operador "o" al menos una debe ser verdadera
+        * ! operador "no" negar todo lo anterior*/
     }
 }
